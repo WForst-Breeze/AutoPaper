@@ -36,8 +36,6 @@ AutoPaperAgent/
 pip install langchain-openai langchain-core pymupdf tqdm openai
 ```
 
----
-
 ## 配置说明
 
 在 `main.py` 中修改以下配置：
@@ -50,8 +48,6 @@ BASE_URL = "https://api.deepseek.com"
 MODEL_NAME = "deepseek-v4-pro"
 ```
 
----
-
 ## 使用方法
 
 ### 1. 添加 PDF 文献
@@ -62,15 +58,11 @@ MODEL_NAME = "deepseek-v4-pro"
 ./papers
 ```
 
----
-
 ### 2. 编写系统 Prompt
 
 ```text
 prompts/system_prompt.txt
 ```
-
----
 
 ### 3. 编写论文大纲
 
@@ -78,31 +70,11 @@ prompts/system_prompt.txt
 prompts/outline.txt
 ```
 
-示例：
-
-```text
-论文题目：xxxxxx
-
-大纲：
-
-1. 引言
-2. xxxxxx
-3. xxxxxx
-4. xxxxxx
-5. 当前存在的问题
-6. 未来发展方向
-7. 总结
-```
-
----
-
 ### 4. 运行项目
 
 ```bash
 python main.py
 ```
-
----
 
 ### 5. 输出结果
 
